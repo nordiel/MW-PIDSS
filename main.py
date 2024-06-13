@@ -45,14 +45,16 @@ demo = gr.Interface(
     neutral_hue="gray",
     )
 )
+
+# Launch gradio interface
 try:
-# Set share=False to run the interface locally
+    # Set share=False to run the interface locally
     demo.launch(share=False) 
-     
+
 except Exception as e:
     # Handle any other exception
     print(f"An unexpected error occurred: {e}")
-    
+
 else:
     # This block executes if no exception occurs
     print("PIDSS loaded successfully.")
